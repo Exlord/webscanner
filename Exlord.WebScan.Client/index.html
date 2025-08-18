@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exlord's WebScanner Demo</title>
+</head>
+<body>
+<div id="app">
+  <fieldset>
+    <legend> == 1 ==</legend>
+    <button id='devices-button'>getDevices</button>
+  </fieldset>
+  <fieldset>
+    <legend> == 2 ==</legend>
+    Device :
+    <select id="selected-device"></select>
+    <br />
+    Source :
+    <select id="paperSource">
+      <option value="0" selected>Auto</option>
+      <option value="1">Flatbed</option>
+      <option value="2">Feeder</option>
+      <option value="3">Duplex</option>
+
+    </select>
+    <br />
+    DPI :
+    <select id="dpi">
+      <option value="300" selected>300</option>
+      <option value="400">400</option>
+      <option value="600">600</option>
+    </select>
+    <br />
+    BitDepth :
+    <select id="bitDepth">
+      <option value="0">Color</option>
+      <option value="1">Grayscale</option>
+      <option value="2">BlackAndWhite</option>
+    </select>
+    <br />
+    <button id='save-button'>save</button>
+  </fieldset>
+  <fieldset>
+    <legend> == 3 ==</legend>
+    <button id='scan-button'>scan</button>
+  </fieldset>
+  <fieldset>
+    <legend> == Output ==</legend>
+    <img id="preview" style="max-width: 100%;max-height: 100%" width="500" />
+  </fieldset>
+</div>
+<script type="module" src="./src/main.ts"></script>
+</body>
+</html>

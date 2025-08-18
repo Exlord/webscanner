@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>dotnet-Exlord.WebScan.LocalService-FEFCA95A-331D-4C10-903D-4A4E7D1F4C65</UserSecretsId>
+        <ServerGarbageCollection>true</ServerGarbageCollection>
+        
+        <OutputType>exe</OutputType>
+        <PublishSingleFile Condition="'$(Configuration)' == 'Release'">true</PublishSingleFile>
+        <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+        <PlatformTarget>x64</PlatformTarget>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="EmbedIO" Version="3.5.2" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.7" />
+        <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="9.0.7" />
+        <PackageReference Include="NAPS2.Escl.Server" Version="1.2.0" />
+        <PackageReference Include="NAPS2.Images.ImageSharp" Version="1.2.0" />
+        <PackageReference Include="NAPS2.Sdk" Version="1.2.0" />
+        <PackageReference Include="NAPS2.Sdk.Worker.Win32" Version="1.2.0" />
+    </ItemGroup>
+</Project>

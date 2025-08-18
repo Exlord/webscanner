@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {
+    // Your project specific rules can be added here
+  },
+  "settings": {
+  }
+}
