@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "Exlord.WebScan.LocalService": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true,
+      "nativeDebugging": true,
+      "jsWebView2Debugging": false
+    }
+  },
+  "$schema": "http://json.schemastore.org/launchsettings.json"
+}
