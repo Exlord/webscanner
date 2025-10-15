@@ -1,4 +1,4 @@
-# NAPS2.WebScan
+# Exlord.WebScan
 
 Simple app for scanning from a web browser in JavaScript/TypeScript using [NAPS2.Sdk](https://www.naps2.com/sdk).
 
